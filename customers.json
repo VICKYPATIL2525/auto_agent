@@ -1,0 +1,113 @@
+
+[
+  {
+    "customer_id": 101,
+    "name": "Rahul Sharma",
+    "age": 28,
+    "city": "Hyderabad",
+    "email": "rahul@example.com",
+    "membership": "Gold",
+    "total_orders": 25,
+    "total_spent": 45000,
+    "status": "Active"
+  },
+  {
+    "customer_id": 102,
+    "name": "Priya Patel",
+    "age": 24,
+    "city": "Mumbai",
+    "email": "priya@example.com",
+    "membership": "Silver",
+    "total_orders": 12,
+    "total_spent": 18000,
+    "status": "Active"
+  },
+  {
+    "customer_id": 103,
+    "name": "Amit Verma",
+    "age": 35,
+    "city": "Delhi",
+    "email": "amit@example.com",
+    "membership": "Platinum",
+    "total_orders": 50,
+    "total_spent": 125000,
+    "status": "Active"
+  },
+  {
+    "customer_id": 104,
+    "name": "Sneha Reddy",
+    "age": 29,
+    "city": "Hyderabad",
+    "email": "sneha@example.com",
+    "membership": "Gold",
+    "total_orders": 30,
+    "total_spent": 67000,
+    "status": "Active"
+  },
+  {
+    "customer_id": 105,
+    "name": "Karan Mehta",
+    "age": 22,
+    "city": "Pune",
+    "email": "karan@example.com",
+    "membership": "Regular",
+    "total_orders": 5,
+    "total_spent": 4500,
+    "status": "Inactive"
+  },
+  {
+    "customer_id": 106,
+    "name": "Ananya Singh",
+    "age": 31,
+    "city": "Bangalore",
+    "email": "ananya@example.com",
+    "membership": "Platinum",
+    "total_orders": 42,
+    "total_spent": 98000,
+    "status": "Active"
+  },
+  {
+    "customer_id": 107,
+    "name": "Vikram Joshi",
+    "age": 27,
+    "city": "Mumbai",
+    "email": "vikram@example.com",
+    "membership": "Silver",
+    "total_orders": 15,
+    "total_spent": 22000,
+    "status": "Inactive"
+  },
+  {
+    "customer_id": 108,
+    "name": "Neha Kulkarni",
+    "age": 26,
+    "city": "Pune",
+    "email": "neha@example.com",
+    "membership": "Gold",
+    "total_orders": 28,
+    "total_spent": 56000,
+    "status": "Active"
+  },
+  {
+    "customer_id": 109,
+    "name": "Arjun Rao",
+    "age": 40,
+    "city": "Chennai",
+    "email": "arjun@example.com",
+    "membership": "Platinum",
+    "total_orders": 60,
+    "total_spent": 150000,
+    "status": "Active"
+  },
+  {
+    "customer_id": 110,
+    "name": "Meera Shah",
+    "age": 33,
+    "city": "Delhi",
+    "email": "meera@example.com",
+    "membership": "Regular",
+    "total_orders": 8,
+    "total_spent": 9000,
+    "status": "Inactive"
+  }
+]

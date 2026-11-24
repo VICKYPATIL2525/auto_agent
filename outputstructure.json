@@ -1,0 +1,155 @@
+{
+  "messages": [
+    {
+      "type": "human",
+      "content": "who are you"
+    },
+    {
+      "type": "ai",
+      "content": "I am an assistant designed to help with various tasks. How can I assist you today?",
+      "tool_calls": [],
+      "model": "qwen2.5:7b",
+      "provider": "ollama",
+      "usage_metadata": {
+        "input_tokens": 271,
+        "output_tokens": 19,
+        "total_tokens": 290
+      }
+    }
+  ]
+}
+
+{
+  "messages": [
+    {
+      "type": "human",
+      "content": "add 5 and 10"
+    },
+    {
+      "type": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "add",
+          "args": {
+            "num1": 5,
+            "num2": 10
+          },
+          "id": "b29b4ee6-a529-42f0-93f0-722b7259a6e8"
+        }
+      ],
+      "model": "qwen2.5:7b"
+    },
+    {
+      "type": "tool",
+      "name": "add",
+      "content": "20"
+    },
+    {
+      "type": "ai",
+      "content": "The sum of 5 and 10 is 20.",
+      "tool_calls": [],
+      "model": "qwen2.5:7b"
+    }
+  ]
+}
+
+{
+  "messages": [
+    {
+      "type": "human",
+      "content": "50-5"
+    },
+    {
+      "type": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "sub",
+          "args": {
+            "num1": 50,
+            "num2": 5
+          },
+          "id": "c74e81d9-13e1-4c11-bd22-93763322b369"
+        }
+      ],
+      "model": "qwen2.5:7b"
+    },
+    {
+      "type": "tool",
+      "name": "sub",
+      "content": "40"
+    },
+    {
+      "type": "ai",
+      "content": "The result of subtracting 5 from 50 is 40.",
+      "tool_calls": [],
+      "model": "qwen2.5:7b"
+    }
+  ]
+}
+
+// this is all three call at once json output 
+{
+  "messages": [
+    {
+      "type": "human",
+      "content": "who is admin and what is 5 plus 200 and 500-5"
+    },
+    {
+      "type": "ai",
+      "content": "",
+      "tool_calls": [
+        {
+          "name": "get_admin_name",
+          "args": {},
+          "id": "7ff8ab2c-f367-4ba2-87e1-b4d88dd7be2f"
+        },
+        {
+          "name": "add",
+          "args": {
+            "num1": 5,
+            "num2": 200
+          },
+          "id": "cc09aaac-103a-428b-a8c3-9c91a63af48f"
+        },
+        {
+          "name": "sub",
+          "args": {
+            "num1": 500,
+            "num2": 5
+          },
+          "id": "bbd441d7-f455-407f-903f-8583f054c377"
+        }
+      ],
+      "model": "qwen2.5:7b"
+    },
+    {
+      "type": "tool",
+      "name": "get_admin_name",
+      "content": "Vicky Vijay Patil"
+    },
+    {
+      "type": "tool",
+      "name": "add",
+      "content": "210"
+    },
+    {
+      "type": "tool",
+      "name": "sub",
+      "content": "490"
+    },
+    {
+      "type": "ai",
+      "content": "The system administrator's name is Vicky Vijay Patil. The result of 5 plus 200 is 210, and the result of 500 minus 5 is 490.",
+      "tool_calls": [],
+      "model": "qwen2.5:7b",
+      "provider": "ollama",
+      "usage_metadata": {
+        "input_tokens": 407,
+        "output_tokens": 47,
+        "total_tokens": 454
+      }
+    }
+  ]
+}
